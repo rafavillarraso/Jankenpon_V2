@@ -1,0 +1,19 @@
+.marcador, .contador{
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border-bottom-style:solid;
+}
+
+.global {
+    text-align: center;
+}
+
+#p1, #p2 {
+    margin:20px;
+}
+/*
+#bloque_inferior {
+    display: none;
+}*/

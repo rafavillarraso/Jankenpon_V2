@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jankenpon V2</title>
+    <link rel="stylesheet" href="stilos.css">
+    <script src="principal.js"></script>
+</head>
+<body>
+    <div class="global"><h1>Jankenpon!</h1>
+    <div class="contador"><h4>Rondas</h4>
+        <div><p><input onchange="cambio_ronda()" type="number" id="rondas"></p></div></div>
+        <div style="display:none">Contador: <span id="cont">0</span></div>
+    <div id="bloque_inferior" style="display:none"><div class="marcador"><h4>Marcador</h4>
+        <div><p>Tú:<span id="marcador1">0</span></p></div>
+        <div><p>La máquina:<span id="marcador2">0</span></p></div></div>
+        <h3>Elige tu tirada</h3>
+        <div>
+        <button onclick="ponerPiedra ();">Piedra</button>
+        <button onclick="ponerPapel ();">Papel</button>
+        <button onclick="ponerTijeras ();">Tijeras</button>
+        <button onclick="ponerLagarto ();">Lagarto</button>
+        <button onclick="ponerSpock ();">Spock</button>
+    </div>
+    <div>
+        <p><span>Tú:</span><span id="p1"></span>
+        <span>La máquina:</span><span id="p2"></span></p>
+    </div>
+    <div id="gana-pierde"></div>
+    <div><button onclick="location.reload ();">Limpiar</button></div>
+</div>
+</div>
+</body>
+</html>
